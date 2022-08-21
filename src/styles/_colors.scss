@@ -1,0 +1,90 @@
+:root {
+    --black: black;
+    --white: white;
+
+    --primary: #00ff00;
+    --primary-dark: #008000;
+    --primary-light: #ccffcc;
+
+    --secondary: #00ffff;
+    --secondary-dark: #008080;
+    --secondary-light: #ccffff;
+
+    --tertiary: #191919;
+    --gradient: linear-gradient(180deg,
+            var(--primary) 0%,
+            var(--secondary) 100%);
+
+    --information-light: #00ffff;
+    --information-dark: #008080;
+    --success-light: #00ff00;
+    --success-dark: #008000;
+    --error-light: #ff6b6b;
+    --error-dark: #8f0a00;
+    --warning-light: #ffb26b;
+    --warning-dark: #af5400;
+
+    --gray-light-100: #f0f0f0;
+    --gray-light-200: #e0e0e0;
+    --gray-light-300: #d1d1d1;
+    --gray-light-400: #c2c2c2;
+    --gray-light-500: #b2b2b2;
+    --gray-light-600: #a3a3a3;
+    --gray-light-700: #949494;
+
+    --gray: #858585;
+    --gray-dark-100: #757575;
+    --gray-dark-200: #666666;
+    --gray-dark-300: #575757;
+    --gray-dark-400: #474747;
+    --gray-dark-500: #383838;
+    --gray-dark-600: #292929;
+    --gray-dark-700: #191919;
+
+    --btn-primary-bg: #00ff00;
+    --btn-primary-hover: #008000;
+    --btn-primary-disabled: #008000;
+    --btn-primary-text: #191919;
+    --btn-primary-hover-text: #ffffff;
+    --btn-primary-disabled-text: #575757;
+
+    --btn-secondary-bg: #191919;
+    --btn-secondary-hover: #191919;
+    --btn-secondary-disabled: #e0e0e0;
+    --btn-secondary-main-text: #00ff00;
+    --btn-secondary-hover-text: #ccffcc;
+    --btn-secondary-disabled-text: #575757;
+
+    --btn-tertiary-bg: #ffffff;
+    --btn-tertiary-hover: #ccffcc;
+    --btn-tertiary-disabled: #e0e0e0;
+    --btn-tertiary-main-text: #191919;
+    --btn-tertiary-hover-text: #191919;
+    --btn-tertiary-disabled-text: #575757;
+
+    --btn-outlined-bg: transparent;
+    --btn-outlined-hover: #ccffcc;
+    --btn-outlined-disabled: transparent;
+    --btn-outlined-main-text: #191919;
+    --btn-outlined-hover-text: #191919;
+    --btn-outlined-disabled-text: #666666;
+
+    --btn-text-bg: transparent;
+    --btn-text-hover: #ccffcc;
+    --btn-text-disabled: transparent;
+    --btn-text-main-text: #191919;
+    --btn-text-hover-text: #191919;
+    --btn-text-disabled-text: #666666;
+
+    --btn-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+
+    --btn-loading-spinner-primary: #191919;
+    --btn-loading-spinner-secondary: #00ff00;
+    --btn-loading-spinner-tertiary: #008000;
+
+    --label-uppercase: #575757;
+
+    --body-secondary-bg: #f6f6f6;
+
+    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}

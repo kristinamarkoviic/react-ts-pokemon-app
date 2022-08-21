@@ -1,26 +1,41 @@
 {
-  "compilerOptions": {
+  "compilerOptions": { 
+    "baseUrl": "src",
     "target": "es5",
     "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
+      "DOM",
+      "DOM.iterable",
+      "ESnext"
     ],
     "allowJs": true,
-    "skipLibCheck": true,
+    "skipLibCheck": false,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
+    "module": "ESnext",
+    "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "plugins": [
+      {
+          "name": "typescript-plugin-css-modules",
+          "options": {
+              "rendererOptions": {
+                  "sass": {
+                      "includePaths": [
+                          "src"
+                      ]
+                  }
+              }
+          }
+      }
+  ]
   },
   "include": [
-    "src"
+    "./src"
   ]
 }
