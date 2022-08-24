@@ -1,7 +1,13 @@
 .footer {
+    background-color: var(--primary);
     width: 100%;
     position: relative;
     bottom: 0;
-    height: 50px;
-    background-color: var(--gray-light-700);
+}
+
+.footerText {
+    color: var(--white);
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
 }

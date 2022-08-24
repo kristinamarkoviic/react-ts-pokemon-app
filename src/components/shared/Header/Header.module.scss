@@ -1,0 +1,23 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgb(33 51 67 / 12%);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navTab {
+    width: 30%;
+    margin-left: 20px;
+    margin-right: 20px;
+    &:hover {
+        background-color: red;
+    }
+}
+
+.navLink {
+    color: var(--link-color);
+    span {
+        font-size: 18px;
+    }
+}

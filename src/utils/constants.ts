@@ -1,7 +1,9 @@
 // APP TEXT
-export const APP_TITLE = 'Pokemon APP';
-export const APP_DESCRIPTION = 'React TypeScript Material-UI';
+const APP_TITLE = 'Pokemon APP';
+const APP_DESCRIPTION = 'React TypeScript Material-UI';
 // PAGES TITLE
-export const PAGE_TITLE_HOME = 'Home';
-export const PAGE_TITLE_PROFILE = 'Profile';
-export const PAGE_TITLE_POKEMON = 'Pokemon';
+const PAGE_TITLE_HOME = 'Home';
+const PAGE_TITLE_PROFILE = 'Profile';
+const PAGE_TITLE_POKEMON = 'Pokemon';
+
+export { APP_TITLE, APP_DESCRIPTION, PAGE_TITLE_HOME, PAGE_TITLE_PROFILE, PAGE_TITLE_POKEMON };
