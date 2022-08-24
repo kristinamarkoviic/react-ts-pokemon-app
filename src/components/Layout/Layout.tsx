@@ -1,18 +1,19 @@
+import { FC } from 'react';
+import styles from './Layout.module.scss';
 import { Header } from '../shared/Header/Header';
 import { Footer } from '../shared/Footer/Footer';
 
-type LayoutProps = {
-    children: React.ReactNode;
-};
+const Layout: FC = (props) => {
+    const { children } = props;
 
-
-export const Layout = (props: LayoutProps) => {
+    // Could this be a good place to use the main tag?
     return (
         <>
-            <Header/>
-            {props.children}
-
-            <Footer/>
+            <div className={styles.mainConatainer}>
+                <Header/>
+                {children}
+                <Footer/>
+            </div>
         </>
     )
 }
