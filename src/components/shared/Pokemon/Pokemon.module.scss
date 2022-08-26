@@ -1,0 +1,41 @@
+.container {
+    height: 100%;
+    width: 600px;
+    background: var(--pokemon-card-color);
+    border-radius: 20px;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+.pokemonAbout {
+    padding: 10px;
+}
+
+.pokemonName {
+    color: var(--primary);
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.pokemonLabel {
+    display: inline;
+    color: var(--primary);
+}
+
+.pokemonImage {
+    width: 150px;
+    height: 150px;
+}
+
+.pokemonInfo {
+    list-style-type: none;
+    padding: 10px;
+    min-width: 100px;
+}
+
+.pokemonInformation {
+    display: flex;
+    padding: 10px;
+}
+

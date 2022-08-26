@@ -1,6 +1,7 @@
 import axios from 'axios';
 // import { IPokemon } from "components/shared/interfaces/IPokemon";
 import { IPokemonResponse } from "components/shared/interfaces/IPokemonResponse";
+import { ISinglePokemonResponse } from "components/shared/interfaces/ISinglePokemonResponse";
 
 //const axios  = require('axios');
 
@@ -39,6 +40,11 @@ class PokemonService {
     }
 }; */
 
+const pokemonApi = axios.create({
+    baseURL: 'https://pokeapi.co/api/v2/'
+});
+
+const getSinglePokemon = (id: number) => pokemonApi.get<ISinglePokemonResponse>(`/pokemon/${id}`).then(response => response.data);
 const getAllPokemon = () => {
     return axios.get('https://pokeapi.co/api/v2/pokemon').then(response => response).catch(err => { console.error(err) });
 }
@@ -47,6 +53,7 @@ const getAllPokemon = () => {
 
 const pokemonService = {
     get: getAllPokemon,
+    getById: getSinglePokemon
 }
 
 //export const pokemonService = new PokemonService();

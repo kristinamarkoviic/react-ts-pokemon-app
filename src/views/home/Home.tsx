@@ -1,27 +1,20 @@
 import {FC, useEffect, useState } from "react";
 import axios from 'axios';
 import Alert from '@mui/material/Alert';
-
-
 import styles from './Home.module.scss';
-
 import { pokemonService } from "services/PokemonService";
-
 import { Pokemon } from "components/shared/Pokemon";
 import { IPokemon } from "components/shared/interfaces/IPokemon";
 import { IPokemonResponse } from "components/shared/interfaces/IPokemonResponse";
-
 import { APP_TITLE, PAGE_TITLE_HOME } from '../../utils/constants';
-
 import { SearchInput } from "components/shared/SearchInput";
 
 const HomePage: FC = (props) => {
+    const { children } = props;
+
     const [pokemons, setPokemons] = useState<Array<IPokemon>>([]);
     const [hasError, setHasError] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
-
-
-    const { children } = props;
 
     /* Zadatak za sutra
         - prebaciti dohvacanje pokemona u zasebnu funkciju → bonus bodovi
@@ -58,7 +51,7 @@ const HomePage: FC = (props) => {
     const renderError = hasError && !isLoading && <Alert severity="error">There has been an error while fetching Pokemon. Please try again</Alert>;
 
     const renderSearch = pokemons.length > 0 && 
-    <SearchInput searchedPokemons={pokemons}></SearchInput>
+    <SearchInput></SearchInput>
 
     const renderPokemon = pokemons.length > 0 && 
         pokemons.map((pokemon, index) => (
